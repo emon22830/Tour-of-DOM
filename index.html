@@ -9,6 +9,9 @@
         h1{
             color: green;
         }
+        #food-title{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -16,13 +19,26 @@
         <h1>This is my header with no Border</h1>
     </header>
     <main>
-        <h1>Welcome to my DOM</h1>
+      <section><h1>Welcome to my DOM</h1>
+    <ul>
+        <li>MD EMON</li>
+        <li>MST MARIA</li>
+        <li>MD RAKIB</li>
+        <li>MIM</li>
+    </ul></section>
+
+    <section>
+        <h1 id="food-title">Foods I love</h1>
         <ul>
-            <li>MD EMON</li>
-            <li>MST MARIA</li>
-            <li>MD RAKIB</li>
-            <li>MIM</li>
+            <li>Beef</li>
+            <li>Chicken</li>
+            <li>Pasta</li>
+            <li id="l3">Noodles</li>
+            <li>Jaal Muri</li>
+            <li class="foreign-food">Burger</li>
+            <li class="foreign-food">Pizza</li>
         </ul>
+    </section>
     </main>
 
 
@@ -32,25 +48,44 @@
         // console.log("Hello, bole chole gelo")
 
         // const student = {
-        //     name: "MD RMON",
+        //     name: "MD EMON",
         //     id:102,
-        //     study: function(subjecct){
-        //         console.log('Studying Subject: ', subjecct)
+        //     study: function(subject){
+        //         console.log('Studying Subject: ', subject)
         //     }
         // }
 
-        const liCollection = document.getElementsByTagName('li')
-        console.log(liCollection)
-        for (const li of liCollection){
-            console.log(li.innerText)
+        // const liCollection = document.getElementsByTagName('li')
+        // console.log(liCollection)
+        // for (const li of liCollection){
+        //     console.log(li.innerText)
+        // }
+
+        // //all h1 tags
+        // const allHeadings = document.getElementsByTagName('h1')
+        // console.log(allHeadings)
+        // for(const heading of allHeadings){
+        //     console.log(heading.innerText)
+        // }
+
+
+
+
+        //get by id
+        // const foodTitleH1 = document.getElementById('food-title');
+        // console.log(foodTitleH1.innerText)
+        // foodTitleH1.innerText = "Favourite Food";
+
+        // const l3List = document.getElementById('l3')
+        // console.log(l3List.innerText);
+        // l3List.innerText = "Kacchi "
+
+        const foreignFood = document.getElementsByClassName('foreign-food');
+        console.log(foreignFood)
+        for( const food of foreignFood){
+                console.log(food.innerText)
         }
 
-        //all h1 tags
-        const allHeadings = document.getElementsByTagName('h1')
-        console.log(allHeadings)
-        for(const heading of allHeadings){
-            console.log(heading.innerText)
-        }
         
     </script>
 
