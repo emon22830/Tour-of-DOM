@@ -21,14 +21,37 @@
             <li>MD EMON</li>
             <li>MST MARIA</li>
             <li>MD RAKIB</li>
+            <li>MIM</li>
         </ul>
     </main>
 
 
 
     <script>
-        console.log("Hello from Javascript");
-        console.log("Hello, bole chole gelo")
+        // console.log("Hello from Javascript");
+        // console.log("Hello, bole chole gelo")
+
+        // const student = {
+        //     name: "MD RMON",
+        //     id:102,
+        //     study: function(subjecct){
+        //         console.log('Studying Subject: ', subjecct)
+        //     }
+        // }
+
+        const liCollection = document.getElementsByTagName('li')
+        console.log(liCollection)
+        for (const li of liCollection){
+            console.log(li.innerText)
+        }
+
+        //all h1 tags
+        const allHeadings = document.getElementsByTagName('h1')
+        console.log(allHeadings)
+        for(const heading of allHeadings){
+            console.log(heading.innerText)
+        }
+        
     </script>
 
     <script src="hello.js"></script>
